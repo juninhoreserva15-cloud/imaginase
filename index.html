@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Imagina Se Curiosidades: privacidade e termos</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+  /* Documento legal de uma coluna; cabeçalho com a marca do canal (laranja do "?"), seções com âncora */
+  :root {
+    --bg: #FFFBF5;
+    --fg: #2B1B12;
+    --muted: #6B5A4E;
+    --line: #EADBC8;
+    --accent: #E8541E;
+    --chip: #FFE7D6;
+    --display: "Baloo 2", "Trebuchet MS", system-ui, sans-serif;
+    --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1B1410; --fg: #F6EDE4; --muted: #BBA999; --line: #3A2C23; --accent: #FF8A5C; --chip: #3A2418;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1B1410; --fg: #F6EDE4; --muted: #BBA999; --line: #3A2C23; --accent: #FF8A5C; --chip: #3A2418;
+    color-scheme: dark;
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.6; }
+  .wrap {
+    max-width: 44rem; margin: 0 auto;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 40px 64px;
+    display: flex; flex-direction: column; gap: 40px;
+  }
+  header { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .mark {
+    width: 56px; height: 56px; border-radius: 50%; background: var(--accent); color: #fff;
+    display: grid; place-items: center; font-family: var(--display); font-weight: 800; font-size: 34px; flex: none;
+  }
+  h1 { font-family: var(--display); font-weight: 800; font-size: 2rem; line-height: 1.1; margin: 0; text-wrap: balance; }
+  .meta { color: var(--muted); font-size: 0.95rem; margin: 4px 0 0; }
+  nav { display: flex; gap: 8px; flex-wrap: wrap; }
+  nav a {
+    font-weight: 600; text-decoration: none; color: var(--accent); background: var(--chip);
+    padding: 6px 14px; border-radius: 999px;
+  }
+  nav a:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  section { display: flex; flex-direction: column; gap: 12px; border-top: 1px solid var(--line); padding-top: 28px; }
+  h2 { font-family: var(--display); font-weight: 800; font-size: 1.5rem; margin: 0; }
+  h3 { font-size: 1.05rem; font-weight: 600; margin: 8px 0 0; }
+  p, ul, ol { margin: 0; }
+  ul, ol { padding-left: 1.3rem; display: flex; flex-direction: column; gap: 6px; }
+  code { font-size: 0.92em; background: var(--chip); padding: 1px 6px; border-radius: 4px; }
+  footer { color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="mark" aria-hidden="true">?</div>
+    <div>
+      <h1>Imagina Se Curiosidades</h1>
+      <p class="meta">Política de Privacidade e Termos de Uso · atualizado em 29 de outubro de 2026</p>
+    </div>
+  </header>
+
+  <nav aria-label="Seções">
+    <a href="#privacidade">Política de Privacidade</a>
+    <a href="#termos">Termos de Uso</a>
+  </nav>
+
+  <section id="privacidade">
+    <h2>Política de Privacidade</h2>
+
+    <h3>O que é o aplicativo</h3>
+    <p>"Imagina Se Curiosidades" é uma ferramenta de uso pessoal, instalada no computador do responsável pelo canal,
+      que envia vídeos curtos produzidos pelo próprio canal para a conta do TikTok desse mesmo responsável: como
+      rascunho, na caixa de entrada do app, ou como post, depois que ele revisa e confirma cada vídeo numa tela de
+      publicação. Ela não é oferecida ao público e não tem cadastro de usuários.</p>
+
+    <h3>Dados que acessamos</h3>
+    <p>Somente com a autorização da própria conta, pelo Login Kit do TikTok:</p>
+    <ul>
+      <li><code>user.info.basic</code>: identificação básica da conta autorizada (ID, nome de exibição e foto), usada só
+        para confirmar qual conta está conectada.</li>
+      <li><code>video.upload</code>: envio de vídeos para a caixa de entrada da conta, onde o próprio titular revisa e
+        decide se publica.</li>
+      <li><code>video.publish</code>: publicação no perfil da conta, feita só quando o titular clica em "Postar no
+        TikTok" depois de ver a prévia, editar a legenda e escolher quem pode ver o vídeo.</li>
+    </ul>
+
+    <h3>Como os dados são guardados</h3>
+    <p>O token de acesso fica apenas no computador do responsável, em um arquivo local. Não há servidor, banco de dados
+      na nuvem, cookies de rastreamento, anúncios ou venda de dados. Nenhum dado de outros usuários do TikTok
+      (seguidores, comentários ou mensagens) é coletado.</p>
+
+    <h3>Compartilhamento</h3>
+    <p>Os vídeos e suas informações são enviados somente ao TikTok, pela API oficial. Nada é repassado a terceiros.</p>
+
+    <h3>Retenção e exclusão</h3>
+    <p>O token pode ser apagado a qualquer momento, removendo o arquivo local. O acesso também pode ser revogado no app
+      do TikTok, em Configurações e privacidade › Segurança › Aplicativos e serviços. Depois da revogação, nenhum dado
+      continua sendo acessado.</p>
+
+    <h3>Crianças</h3>
+    <p>O aplicativo não é direcionado a crianças e não coleta dados de menores de idade.</p>
+
+    <h3>Contato</h3>
+    <p>Dúvidas sobre esta política podem ser enviadas ao responsável pelo canal "Imagina Se Curiosidades", pelos
+      canais de contato indicados no perfil do canal.</p>
+  </section>
+
+  <section id="termos">
+    <h2>Termos de Uso</h2>
+    <ol>
+      <li><strong>Uso.</strong> O aplicativo serve exclusivamente para o responsável pelo canal "Imagina Se Curiosidades"
+        enviar os próprios vídeos à sua conta do TikTok. Não há contas de terceiros nem uso por outras pessoas.</li>
+      <li><strong>Conteúdo.</strong> Todo vídeo enviado é produzido pelo próprio canal. O titular da conta revisa e
+        confirma cada vídeo antes de publicar e é responsável por ele, conforme os Termos de Serviço e as Diretrizes
+        da Comunidade do TikTok.</li>
+      <li><strong>Disponibilidade.</strong> A ferramenta é fornecida no estado em que se encontra, sem garantia de
+        funcionamento contínuo, e pode mudar ou ser descontinuada a qualquer momento.</li>
+      <li><strong>Revogação.</strong> A autorização pode ser retirada a qualquer momento nas configurações do TikTok.</li>
+      <li><strong>Contato.</strong> Pelos canais de contato indicados no perfil do canal "Imagina Se Curiosidades".</li>
+    </ol>
+  </section>
+
+  <footer>Imagina Se Curiosidades · canal de vídeos curtos de curiosidades "E se...?"</footer>
+</div>
+</body>
+</html>
